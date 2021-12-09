@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,  initial-scale=1">
+  <link href="../css.post.css" rel="stylesheet">
+  <title>Cadastro Cliente</title>
+  </head>
+ <body>
+
+  <form onsubmit="cadastroCliente()">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome">
+    <br>
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+    <br>
+    <label for="cpfOuCnpj">CPF ou CNPJ</label>
+    <input type="text" name="cpfOuCnpj">
+    <br>
+    <label for="tipo">Tipo</label><br>
+    <select id="tipo" name="tipo">
+      <option value="PESSOAFISICA" selected>Pessoa Física</option>
+      <option value ="PESSOAJURIDICA">Pessoa Jurídica</option>
+    </select><br>
+    <label for="telefones">Telefone</label>
+    <input type="text" name="telefones" id="telefones">
+    <br>
+
+    <button type="onsubmit">Enviar</button>
+    </form>
+
+
+    <script type="text/javascript" src="../js/post.js"></script>
+  </body>
+</html>
