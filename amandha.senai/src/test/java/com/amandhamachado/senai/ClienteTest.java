@@ -62,4 +62,44 @@ public void deleteCliente() {
 	clienteRepo.deleteById(2);
 	assertThat(clienteRepo.existsById(2));
 }
+
+//Soma
+@Test
+public void somar() {
+	double num1 = 5;
+	double num2 = 10;
+	Cliente cliente = new Cliente();
+	double soma = cliente.somar(num1, num2);
+	assertEquals(15, soma);
+}
+
+//Subtrair
+@Test
+public void subtrair() {
+	double num1 = 5;
+	double num2 = 10;
+	Cliente cliente = new Cliente();
+	double subtrair = cliente.subtrair(num1, num2);
+	assertEquals(-5, subtrair);
+}
+
+//Multiplicação
+@Test
+public void multiplicar() {
+	double num1 = 5;
+	double num2 = 10;
+	Cliente cliente = new Cliente();
+	double multiplicar = cliente.multiplicar(num1, num2);
+	assertEquals(50, multiplicar);
+}
+
+//Dividir
+@Test
+public void dividir() {
+	double num1 = 5;
+	double num2 = 10;
+	Cliente cliente = new Cliente();
+	double dividir = cliente.dividir(num1, num2);
+	assertEquals(0,5, dividir);
+}
 }
