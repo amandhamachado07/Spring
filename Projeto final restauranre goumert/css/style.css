@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #000;
+  background-color: #f5f5f5;
+}
+
+header nav {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+header nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .logo {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav .menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+header .hero {
+  background-image: url('../imagens/capa2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .hero #formSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .hero #formSearch input {
+  width: 70vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, .3);
+  text-align: center;
+}
+
+main {
+  margin: 20px 0px;
+}
+
+main .container h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+main .container .pratos {
+  display: flex;
+  flex-direction: column;
+}
+
+.prato {
+  background-color: #fff;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  transition: 0.3s ease;
+}
+
+.prato:hover {
+  background-color: #f5f5f5;
+}
+
+.prato img {
+  border-radius: 50px 50px 0px 0px;
+  margin-bottom: 10px;
+}
+
+.prato h4 {
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.prato p  {
+  padding: 0px 20px;
+  font-size: 1rem;
+}
+
+.prato a{
+  text-align: center;
+}
+
+.prato button {
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, .3);
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  transition: 0.3s ease;
+}
+
+.prato button:hover {
+  background-color: #dedede;
+  color: #000
+}
+
+footer {
+  padding: 10px 0px;
+  font-weight: bold;
+}
+
+footer .container p {
+  text-align: center;
+}
+.hero-sobre {
+  height: 300px;
+  background-color: #111;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagens/Restaurante.jpg)
+}
+
+.hero-sobre .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 600px) {
+  main .container .pratos {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  main .container .pratos .prato {
+    width: 300px;
+  }
+}
+
+.container {
+  width: 90vw;
+  margin: 0px auto;
+}
+
+.container2 {
+  width: 90vw;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.container2 button {
+  background-color: #000;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #000;
+  transition: 0.3s ease;
+}
+.container2 button:hover {
+  background-color: #f393b8;
+  color: #fff
+}
